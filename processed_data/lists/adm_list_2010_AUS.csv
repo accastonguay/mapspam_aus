@@ -1,0 +1,750 @@
+adm0_name,adm0_code,adm1_name,adm1_code,adm2_name,adm2_code
+Australia,AU0,Australian Capital Territory,AU8,ACT - South West,AU801021027
+Australia,AU0,Australian Capital Territory,AU8,Gungahlin - East,AU801041041
+Australia,AU0,Australian Capital Territory,AU8,Gungahlin - West,AU801041042
+Australia,AU0,Australian Capital Territory,AU8,Hall,AU801041043
+Australia,AU0,Australian Capital Territory,AU8,Holt,AU801011015
+Australia,AU0,Australian Capital Territory,AU8,Kambah,AU801071082
+Australia,AU0,Australian Capital Territory,AU8,Majura,AU801031033
+Australia,AU0,Australian Capital Territory,AU8,Namadgi,AU801021029
+Australia,AU0,New South Wales,AU1,Albion Park - Macquarie Pass,AU107031136
+Australia,AU0,New South Wales,AU1,Albury - East,AU109011172
+Australia,AU0,New South Wales,AU1,Albury Region,AU109011175
+Australia,AU0,New South Wales,AU1,Armidale,AU110011186
+Australia,AU0,New South Wales,AU1,Armidale Region - North,AU110011187
+Australia,AU0,New South Wales,AU1,Armidale Region - South,AU110011188
+Australia,AU0,New South Wales,AU1,Badgerys Creek - Greendale,AU127011505
+Australia,AU0,New South Wales,AU1,Ballina Region,AU112011237
+Australia,AU0,New South Wales,AU1,Bangalow,AU112011238
+Australia,AU0,New South Wales,AU1,Bass Hill - Georges Hall,AU119011354
+Australia,AU0,New South Wales,AU1,Bathurst,AU103011058
+Australia,AU0,New South Wales,AU1,Bathurst - East,AU103011059
+Australia,AU0,New South Wales,AU1,Bathurst Region,AU103011060
+Australia,AU0,New South Wales,AU1,Bayview - Elanora Heights,AU122021421
+Australia,AU0,New South Wales,AU1,Bega-Eden Hinterland,AU101041020
+Australia,AU0,New South Wales,AU1,Bellingen,AU104021083
+Australia,AU0,New South Wales,AU1,Beresfield - Hexham,AU111031223
+Australia,AU0,New South Wales,AU1,Bilpin - Colo - St Albans,AU115031299
+Australia,AU0,New South Wales,AU1,Blayney,AU103041076
+Australia,AU0,New South Wales,AU1,Blue Mountains - North,AU124011451
+Australia,AU0,New South Wales,AU1,Blue Mountains - South,AU124021456
+Australia,AU0,New South Wales,AU1,Bombala,AU101031013
+Australia,AU0,New South Wales,AU1,Bourke - Brewarrina,AU105011092
+Australia,AU0,New South Wales,AU1,Braidwood,AU101021007
+Australia,AU0,New South Wales,AU1,Bulahdelah - Stroud,AU108011151
+Australia,AU0,New South Wales,AU1,Calga - Kulnura,AU102011030
+Australia,AU0,New South Wales,AU1,Casino,AU112021244
+Australia,AU0,New South Wales,AU1,Casino Region,AU112021245
+Australia,AU0,New South Wales,AU1,Castlereagh - Cranebrook,AU124031458
+Australia,AU0,New South Wales,AU1,Cessnock Region,AU106011109
+Australia,AU0,New South Wales,AU1,Claymore - Eagle Vale - Raby,AU123021438
+Australia,AU0,New South Wales,AU1,Cobar,AU105011093
+Australia,AU0,New South Wales,AU1,Cobbitty - Leppington,AU127011506
+Australia,AU0,New South Wales,AU1,Condell Park,AU119011356
+Australia,AU0,New South Wales,AU1,Condobolin,AU103021062
+Australia,AU0,New South Wales,AU1,Cooma Region,AU101031015
+Australia,AU0,New South Wales,AU1,Coonabarabran,AU105031099
+Australia,AU0,New South Wales,AU1,Coonamble,AU105011094
+Australia,AU0,New South Wales,AU1,Cootamundra,AU113031263
+Australia,AU0,New South Wales,AU1,Coramba - Nana Glen - Bucca,AU104021086
+Australia,AU0,New South Wales,AU1,Corowa Region,AU109031181
+Australia,AU0,New South Wales,AU1,Cowra Region,AU103021064
+Australia,AU0,New South Wales,AU1,Cremorne - Cammeray,AU121041413
+Australia,AU0,New South Wales,AU1,Crows Nest - Waverton,AU121041414
+Australia,AU0,New South Wales,AU1,Deniliquin,AU109031182
+Australia,AU0,New South Wales,AU1,Deniliquin Region,AU109031183
+Australia,AU0,New South Wales,AU1,Deua - Wadbilliga,AU101041022
+Australia,AU0,New South Wales,AU1,Dorrigo,AU104021087
+Australia,AU0,New South Wales,AU1,Dubbo - East,AU105031100
+Australia,AU0,New South Wales,AU1,Dubbo Region,AU105031103
+Australia,AU0,New South Wales,AU1,Dungog,AU106011110
+Australia,AU0,New South Wales,AU1,Dural - Kenthurst - Wisemans Ferry,AU115021297
+Australia,AU0,New South Wales,AU1,Ettrema - Sassafras - Budawang,AU114011275
+Australia,AU0,New South Wales,AU1,Eurobodalla Hinterland,AU101041024
+Australia,AU0,New South Wales,AU1,Far West,AU105021098
+Australia,AU0,New South Wales,AU1,Forbes,AU103021065
+Australia,AU0,New South Wales,AU1,Galston - Laughtondale,AU115021298
+Australia,AU0,New South Wales,AU1,Gilgandra,AU105031104
+Australia,AU0,New South Wales,AU1,Glen Innes,AU110021190
+Australia,AU0,New South Wales,AU1,Gloucester,AU108051167
+Australia,AU0,New South Wales,AU1,Goulburn,AU101011001
+Australia,AU0,New South Wales,AU1,Goulburn Region,AU101011002
+Australia,AU0,New South Wales,AU1,Grafton Region,AU104011081
+Australia,AU0,New South Wales,AU1,Grenfell,AU103021066
+Australia,AU0,New South Wales,AU1,Griffith Region,AU113011257
+Australia,AU0,New South Wales,AU1,Gundagai,AU113031264
+Australia,AU0,New South Wales,AU1,Gunnedah Region,AU110041200
+Australia,AU0,New South Wales,AU1,Hay,AU109021177
+Australia,AU0,New South Wales,AU1,Holsworthy - Wattle Grove,AU127031524
+Australia,AU0,New South Wales,AU1,Holsworthy Military Area,AU123021439
+Australia,AU0,New South Wales,AU1,Horsley Park - Kemps Creek,AU127021518
+Australia,AU0,New South Wales,AU1,Illawarra Catchment Reserve,AU107021135
+Australia,AU0,New South Wales,AU1,Ingleburn - Denham Court,AU123021440
+Australia,AU0,New South Wales,AU1,Inverell Region - East,AU110021192
+Australia,AU0,New South Wales,AU1,Inverell Region - West,AU110021193
+Australia,AU0,New South Wales,AU1,Jilliby - Yarramalong,AU102021049
+Australia,AU0,New South Wales,AU1,Jindabyne - Berridale,AU101031016
+Australia,AU0,New South Wales,AU1,Junee,AU113031265
+Australia,AU0,New South Wales,AU1,Kempsey Region,AU108021156
+Australia,AU0,New South Wales,AU1,Kiama Hinterland - Gerringong,AU107031140
+Australia,AU0,New South Wales,AU1,Kingscliff - Fingal Head,AU112031250
+Australia,AU0,New South Wales,AU1,Kyogle,AU112021247
+Australia,AU0,New South Wales,AU1,Leeton,AU113011258
+Australia,AU0,New South Wales,AU1,Lismore,AU112021248
+Australia,AU0,New South Wales,AU1,Lismore Region,AU112021249
+Australia,AU0,New South Wales,AU1,Lithgow Region,AU103031071
+Australia,AU0,New South Wales,AU1,Maclean - Yamba - Iluka,AU104011082
+Australia,AU0,New South Wales,AU1,Macquarie Park - Marsfield,AU126021500
+Australia,AU0,New South Wales,AU1,Maitland - West,AU106021117
+Australia,AU0,New South Wales,AU1,Malabar - La Perouse - Chifley,AU118021350
+Australia,AU0,New South Wales,AU1,Moree Region,AU110031196
+Australia,AU0,New South Wales,AU1,Morisset - Cooranbong,AU111021218
+Australia,AU0,New South Wales,AU1,Mudgee Region - East,AU103031073
+Australia,AU0,New South Wales,AU1,Mudgee Region - West,AU103031074
+Australia,AU0,New South Wales,AU1,Mulgoa - Luddenham - Orchard Hills,AU124031463
+Australia,AU0,New South Wales,AU1,Mullumbimby,AU112011243
+Australia,AU0,New South Wales,AU1,Murwillumbah Region,AU112031252
+Australia,AU0,New South Wales,AU1,Muswellbrook Region,AU106041127
+Australia,AU0,New South Wales,AU1,Nambucca Heads Region,AU108021159
+Australia,AU0,New South Wales,AU1,Narrabri Region,AU110031198
+Australia,AU0,New South Wales,AU1,Narrandera,AU113011259
+Australia,AU0,New South Wales,AU1,Narromine,AU105031105
+Australia,AU0,New South Wales,AU1,Newcastle Port - Kooragang,AU111031230
+Australia,AU0,New South Wales,AU1,North Nowra - Bomaderry,AU114011277
+Australia,AU0,New South Wales,AU1,Nowra,AU114011278
+Australia,AU0,New South Wales,AU1,Nyngan - Warren,AU105011095
+Australia,AU0,New South Wales,AU1,Oberon,AU103011061
+Australia,AU0,New South Wales,AU1,Orange Region,AU103041079
+Australia,AU0,New South Wales,AU1,Panania - Milperra - Picnic Point,AU119011359
+Australia,AU0,New South Wales,AU1,Parkes Region,AU103021068
+Australia,AU0,New South Wales,AU1,Port Macquarie - East,AU108041163
+Australia,AU0,New South Wales,AU1,Port Macquarie - West,AU108041164
+Australia,AU0,New South Wales,AU1,Port Macquarie Region,AU108041165
+Australia,AU0,New South Wales,AU1,Prospect Reservoir,AU116031318
+Australia,AU0,New South Wales,AU1,Queanbeyan Region,AU101021011
+Australia,AU0,New South Wales,AU1,Quirindi,AU110041201
+Australia,AU0,New South Wales,AU1,Riverstone - Marsden Park,AU116021312
+Australia,AU0,New South Wales,AU1,Sawtell - Boambee,AU104021089
+Australia,AU0,New South Wales,AU1,Scone Region,AU106041129
+Australia,AU0,New South Wales,AU1,Seaham - Woodville,AU106031123
+Australia,AU0,New South Wales,AU1,Shellharbour - Flinders,AU107031141
+Australia,AU0,New South Wales,AU1,Singleton Region,AU106011113
+Australia,AU0,New South Wales,AU1,Southern Highlands,AU114021289
+Australia,AU0,New South Wales,AU1,Tamworth Region,AU110041205
+Australia,AU0,New South Wales,AU1,Taree Region,AU108051170
+Australia,AU0,New South Wales,AU1,Temora,AU113031266
+Australia,AU0,New South Wales,AU1,Tenterfield,AU110021194
+Australia,AU0,New South Wales,AU1,Terrey Hills - Duffys Forest,AU122031432
+Australia,AU0,New South Wales,AU1,Tocumwal - Finley - Jerilderie,AU109031185
+Australia,AU0,New South Wales,AU1,Tumbarumba,AU113021260
+Australia,AU0,New South Wales,AU1,Tumut Region,AU113021262
+Australia,AU0,New South Wales,AU1,Tweed Heads,AU112031254
+Australia,AU0,New South Wales,AU1,Tweed Heads - South,AU112031255
+Australia,AU0,New South Wales,AU1,Wagga Wagga Region,AU113031271
+Australia,AU0,New South Wales,AU1,Walcha,AU110011189
+Australia,AU0,New South Wales,AU1,Walgett - Lightning Ridge,AU105011096
+Australia,AU0,New South Wales,AU1,Wellington,AU105031106
+Australia,AU0,New South Wales,AU1,Wentworth-Balranald Region,AU109021179
+Australia,AU0,New South Wales,AU1,West Wyalong,AU103021069
+Australia,AU0,New South Wales,AU1,Williamtown - Medowie - Karuah,AU106031125
+Australia,AU0,New South Wales,AU1,Wollangambe - Wollemi,AU103031075
+Australia,AU0,New South Wales,AU1,Woolgoolga - Arrawarra,AU104021091
+Australia,AU0,New South Wales,AU1,Yass Region,AU101011004
+Australia,AU0,New South Wales,AU1,Young Region,AU101011006
+Australia,AU0,Northern Territory,AU7,Alligator,AU702031057
+Australia,AU0,Northern Territory,AU7,Berrimah,AU701021012
+Australia,AU0,Northern Territory,AU7,Charles,AU702011045
+Australia,AU0,Northern Territory,AU7,Daly,AU702031058
+Australia,AU0,Northern Territory,AU7,Darwin Airport,AU701011001
+Australia,AU0,Northern Territory,AU7,East Side,AU702011046
+Australia,AU0,Northern Territory,AU7,Elsey,AU702051065
+Australia,AU0,Northern Territory,AU7,Flynn (NT),AU702011047
+Australia,AU0,Northern Territory,AU7,Howard Springs,AU701031031
+Australia,AU0,Northern Territory,AU7,Katherine,AU702051067
+Australia,AU0,Northern Territory,AU7,Koolpinyah,AU701031033
+Australia,AU0,Northern Territory,AU7,Larapinta,AU702011048
+Australia,AU0,Northern Territory,AU7,Mount Johns,AU702011049
+Australia,AU0,Northern Territory,AU7,Ross,AU702011051
+Australia,AU0,Northern Territory,AU7,Tanami,AU702011053
+Australia,AU0,Northern Territory,AU7,Weddell,AU701031035
+Australia,AU0,Queensland,AU3,Agnes Water - Miriam Vale,AU308021193
+Australia,AU0,Queensland,AU3,Atherton,AU306051166
+Australia,AU0,Queensland,AU3,Babinda,AU306031158
+Australia,AU0,Queensland,AU3,Bald Hills,AU302011022
+Australia,AU0,Queensland,AU3,Balonne,AU307011171
+Australia,AU0,Queensland,AU3,Banana,AU308021194
+Australia,AU0,Queensland,AU3,Barcaldine - Blackall,AU315031408
+Australia,AU0,Queensland,AU3,Bargara - Burnett Heads,AU319011493
+Australia,AU0,Queensland,AU3,Beachmere - Sandstone Point,AU313011362
+Australia,AU0,Queensland,AU3,Beaudesert,AU311011305
+Australia,AU0,Queensland,AU3,Beenleigh,AU311021306
+Australia,AU0,Queensland,AU3,Beerwah,AU316061439
+Australia,AU0,Queensland,AU3,Bellbowrie - Moggill,AU304021086
+Australia,AU0,Queensland,AU3,Belmont - Gumdale,AU301011002
+Australia,AU0,Queensland,AU3,Bethania - Waterford,AU311051323
+Australia,AU0,Queensland,AU3,Birkdale,AU301011003
+Australia,AU0,Queensland,AU3,Bohle Plains,AU318021470
+Australia,AU0,Queensland,AU3,Boonah,AU310021277
+Australia,AU0,Queensland,AU3,Booral - River Heads,AU319041516
+Australia,AU0,Queensland,AU3,Boronia Heights - Park Ridge,AU311031311
+Australia,AU0,Queensland,AU3,Boyne Island - Tannum Sands,AU308021196
+Australia,AU0,Queensland,AU3,Branyan - Kensington,AU319011494
+Australia,AU0,Queensland,AU3,Brisbane Airport,AU302031036
+Australia,AU0,Queensland,AU3,Broadsound - Nebo,AU312011338
+Australia,AU0,Queensland,AU3,Brookfield - Kenmore Hills,AU304021087
+Australia,AU0,Queensland,AU3,Buderim - North,AU316011413
+Australia,AU0,Queensland,AU3,Buderim - South,AU316011414
+Australia,AU0,Queensland,AU3,Bundaberg Region - North,AU319011498
+Australia,AU0,Queensland,AU3,Bundaberg Region - South,AU319011499
+Australia,AU0,Queensland,AU3,Burdekin,AU318011461
+Australia,AU0,Queensland,AU3,Burpengary,AU313041372
+Australia,AU0,Queensland,AU3,Burrum - Fraser,AU319051522
+Australia,AU0,Queensland,AU3,Caboolture,AU313021365
+Australia,AU0,Queensland,AU3,Caboolture - South,AU313021366
+Australia,AU0,Queensland,AU3,Calamvale - Stretton,AU303051073
+Australia,AU0,Queensland,AU3,Caloundra - West,AU316021420
+Australia,AU0,Queensland,AU3,Caloundra Hinterland,AU316061440
+Australia,AU0,Queensland,AU3,Cambooya - Wyreema,AU317011445
+Australia,AU0,Queensland,AU3,Cape York,AU315011396
+Australia,AU0,Queensland,AU3,Carpentaria,AU315021404
+Australia,AU0,Queensland,AU3,Central Highlands - East,AU308011190
+Australia,AU0,Queensland,AU3,Central Highlands - West,AU308011191
+Australia,AU0,Queensland,AU3,Charleville,AU315031409
+Australia,AU0,Queensland,AU3,Charters Towers,AU318011462
+Australia,AU0,Queensland,AU3,Chinchilla,AU307011172
+Australia,AU0,Queensland,AU3,Clermont,AU312011339
+Australia,AU0,Queensland,AU3,Clifton - Greenmount,AU307031184
+Australia,AU0,Queensland,AU3,Clifton Beach - Kewarra Beach,AU306011139
+Australia,AU0,Queensland,AU3,Collinsville,AU312011340
+Australia,AU0,Queensland,AU3,Cooloola,AU319031511
+Australia,AU0,Queensland,AU3,Coolum Beach,AU316031425
+Australia,AU0,Queensland,AU3,Coomera,AU309071251
+Australia,AU0,Queensland,AU3,Corinda,AU304031093
+Australia,AU0,Queensland,AU3,Cornubia - Carbrook,AU311051324
+Australia,AU0,Queensland,AU3,Crows Nest - Rosalie,AU307021179
+Australia,AU0,Queensland,AU3,Croydon - Etheridge,AU315011397
+Australia,AU0,Queensland,AU3,Currumbin Waters,AU309021232
+Australia,AU0,Queensland,AU3,Daintree,AU306041164
+Australia,AU0,Queensland,AU3,Dakabin - Kallangur,AU314021388
+Australia,AU0,Queensland,AU3,Dalrymple,AU318011463
+Australia,AU0,Queensland,AU3,Darling Heights,AU317011446
+Australia,AU0,Queensland,AU3,Dayboro,AU314011384
+Australia,AU0,Queensland,AU3,Deception Bay,AU313041373
+Australia,AU0,Queensland,AU3,Deeragun,AU318021473
+Australia,AU0,Queensland,AU3,Diddillibah - Rosemount,AU316041430
+Australia,AU0,Queensland,AU3,Eagleby,AU311021307
+Australia,AU0,Queensland,AU3,Elimbah,AU313021367
+Australia,AU0,Queensland,AU3,Enoggera Reservoir,AU304041099
+Australia,AU0,Queensland,AU3,Esk,AU310021278
+Australia,AU0,Queensland,AU3,Eungella Hinterland,AU312021345
+Australia,AU0,Queensland,AU3,Far Central West,AU315031410
+Australia,AU0,Queensland,AU3,Far South West,AU315031411
+Australia,AU0,Queensland,AU3,Forest Lake - Doolandella,AU310011273
+Australia,AU0,Queensland,AU3,Freshwater - Stratford,AU306011140
+Australia,AU0,Queensland,AU3,Gayndah - Mundubbera,AU319021503
+Australia,AU0,Queensland,AU3,Gin Gin,AU319021504
+Australia,AU0,Queensland,AU3,Gladstone Hinterland,AU308021200
+Australia,AU0,Queensland,AU3,Glass House Mountains,AU316061441
+Australia,AU0,Queensland,AU3,Goondiwindi,AU307011173
+Australia,AU0,Queensland,AU3,Gordonvale - Trinity,AU306021148
+Australia,AU0,Queensland,AU3,Gowrie (Qld),AU317011449
+Australia,AU0,Queensland,AU3,Greenbank,AU311041320
+Australia,AU0,Queensland,AU3,Greenbank Military Camp,AU311031315
+Australia,AU0,Queensland,AU3,Guanaba - Springbrook,AU309041241
+Australia,AU0,Queensland,AU3,Gympie Region,AU319031514
+Australia,AU0,Queensland,AU3,Herberton,AU306051167
+Australia,AU0,Queensland,AU3,Highfields,AU317011450
+Australia,AU0,Queensland,AU3,Hope Island,AU309071253
+Australia,AU0,Queensland,AU3,Inala - Richlands,AU310011274
+Australia,AU0,Queensland,AU3,Ingham Region,AU318011465
+Australia,AU0,Queensland,AU3,Inglewood - Waggamba,AU307011174
+Australia,AU0,Queensland,AU3,Ipswich - North,AU310031288
+Australia,AU0,Queensland,AU3,Jacobs Well - Alberton,AU309071254
+Australia,AU0,Queensland,AU3,Jimboomba,AU311041321
+Australia,AU0,Queensland,AU3,Johnstone,AU306031160
+Australia,AU0,Queensland,AU3,Jondaryan,AU307021180
+Australia,AU0,Queensland,AU3,Karalee - Barellan Point,AU310031289
+Australia,AU0,Queensland,AU3,Kelso,AU318021480
+Australia,AU0,Queensland,AU3,Kilcoy,AU313031370
+Australia,AU0,Queensland,AU3,Kilkivan,AU319031515
+Australia,AU0,Queensland,AU3,Kingaroy Region - North,AU319021506
+Australia,AU0,Queensland,AU3,Kingaroy Region - South,AU319021507
+Australia,AU0,Queensland,AU3,Kuraby,AU303061077
+Australia,AU0,Queensland,AU3,Lamb Range,AU306021150
+Australia,AU0,Queensland,AU3,Landsborough,AU316061442
+Australia,AU0,Queensland,AU3,Lockyer Valley - East,AU310021280
+Australia,AU0,Queensland,AU3,Lockyer Valley - West,AU317011451
+Australia,AU0,Queensland,AU3,Longreach,AU315031412
+Australia,AU0,Queensland,AU3,Malanda - Yungaburra,AU306051169
+Australia,AU0,Queensland,AU3,Marcoola - Mudjimba,AU316031426
+Australia,AU0,Queensland,AU3,Maroochy Hinterland,AU316061443
+Australia,AU0,Queensland,AU3,Maroochydore - Kuluin,AU316031427
+Australia,AU0,Queensland,AU3,Maryborough Region - South,AU319051525
+Australia,AU0,Queensland,AU3,Miami,AU309011229
+Australia,AU0,Queensland,AU3,Middle Ridge,AU317011452
+Australia,AU0,Queensland,AU3,Miles - Wandoan,AU307011175
+Australia,AU0,Queensland,AU3,Millmerran,AU307021181
+Australia,AU0,Queensland,AU3,Monto - Eidsvold,AU319021508
+Australia,AU0,Queensland,AU3,Mudgeeraba - Bonogin,AU309051244
+Australia,AU0,Queensland,AU3,Murrumba Downs - Griffin,AU314021389
+Australia,AU0,Queensland,AU3,Nambour,AU316041432
+Australia,AU0,Queensland,AU3,Nanango,AU319021509
+Australia,AU0,Queensland,AU3,Narangba,AU313041375
+Australia,AU0,Queensland,AU3,Noosa Hinterland,AU316041433
+Australia,AU0,Queensland,AU3,North Lakes - Mango Hill,AU314021390
+Australia,AU0,Queensland,AU3,Northern Beaches,AU318021486
+Australia,AU0,Queensland,AU3,Northern Highlands,AU315021407
+Australia,AU0,Queensland,AU3,Ormeau - Yatala,AU309071255
+Australia,AU0,Queensland,AU3,Oxley (Qld),AU310011275
+Australia,AU0,Queensland,AU3,Pallara - Willawong,AU303051074
+Australia,AU0,Queensland,AU3,Pimpama,AU309071257
+Australia,AU0,Queensland,AU3,Pioneer Valley,AU312021351
+Australia,AU0,Queensland,AU3,Pittsworth,AU307021182
+Australia,AU0,Queensland,AU3,Proserpine,AU312031361
+Australia,AU0,Queensland,AU3,Rangeville,AU317011455
+Australia,AU0,Queensland,AU3,Redland Bay,AU301021009
+Australia,AU0,Queensland,AU3,Redland Islands,AU301021010
+Australia,AU0,Queensland,AU3,Redlynch,AU306011141
+Australia,AU0,Queensland,AU3,Ripley,AU310031294
+Australia,AU0,Queensland,AU3,Rochedale - Burbank,AU303031064
+Australia,AU0,Queensland,AU3,Rochedale South - Priestdale,AU311061332
+Australia,AU0,Queensland,AU3,Rockhampton Region - North,AU308031219
+Australia,AU0,Queensland,AU3,Rockhampton Region - West,AU308031220
+Australia,AU0,Queensland,AU3,Roma,AU307011176
+Australia,AU0,Queensland,AU3,Roma Region,AU307011177
+Australia,AU0,Queensland,AU3,Rosewood,AU310021282
+Australia,AU0,Queensland,AU3,Runcorn,AU303061078
+Australia,AU0,Queensland,AU3,Samford Valley,AU314011387
+Australia,AU0,Queensland,AU3,Sarina,AU312021352
+Australia,AU0,Queensland,AU3,Seaforth - Calen,AU312021353
+Australia,AU0,Queensland,AU3,Shailer Park,AU311051327
+Australia,AU0,Queensland,AU3,Sheldon - Mount Cotton,AU301021011
+Australia,AU0,Queensland,AU3,Shoalwater Bay,AU308031221
+Australia,AU0,Queensland,AU3,Southern Downs - East,AU307031185
+Australia,AU0,Queensland,AU3,Southern Downs - West,AU307031186
+Australia,AU0,Queensland,AU3,Springwood,AU311061334
+Australia,AU0,Queensland,AU3,Stanthorpe Region,AU307031188
+Australia,AU0,Queensland,AU3,Strathpine - Brendale,AU314031394
+Australia,AU0,Queensland,AU3,Tablelands,AU315011400
+Australia,AU0,Queensland,AU3,Tara,AU307011178
+Australia,AU0,Queensland,AU3,Tewantin,AU316051438
+Australia,AU0,Queensland,AU3,Thornlands,AU301021012
+Australia,AU0,Queensland,AU3,Toowoomba - Central,AU317011456
+Australia,AU0,Queensland,AU3,Toowoomba - West,AU317011458
+Australia,AU0,Queensland,AU3,Townsville - South,AU318021489
+Australia,AU0,Queensland,AU3,Trinity Beach - Smithfield,AU306011142
+Australia,AU0,Queensland,AU3,Tully,AU306031161
+Australia,AU0,Queensland,AU3,Underwood,AU311061335
+Australia,AU0,Queensland,AU3,Upper Coomera - Willow Vale,AU309071258
+Australia,AU0,Queensland,AU3,Upper Kedron - Ferny Grove,AU304041104
+Australia,AU0,Queensland,AU3,Victoria Point,AU301021013
+Australia,AU0,Queensland,AU3,Wambo,AU307021183
+Australia,AU0,Queensland,AU3,Wamuran,AU313021369
+Australia,AU0,Queensland,AU3,Warwick,AU307031189
+Australia,AU0,Queensland,AU3,Woodford - D'Aguilar,AU313031371
+Australia,AU0,Queensland,AU3,Wooroonooran,AU306031162
+Australia,AU0,Queensland,AU3,Wulguru - Roseneath,AU318021491
+Australia,AU0,South Australia,AU4,Aberfoyle Park,AU403041071
+Australia,AU0,South Australia,AU4,Adelaide,AU401011001
+Australia,AU0,South Australia,AU4,Adelaide Airport,AU404031104
+Australia,AU0,South Australia,AU4,Adelaide Hills,AU401021003
+Australia,AU0,South Australia,AU4,Aldgate - Stirling,AU401021004
+Australia,AU0,South Australia,AU4,Aldinga,AU403041072
+Australia,AU0,South Australia,AU4,Athelstone,AU401041014
+Australia,AU0,South Australia,AU4,Barmera,AU407031159
+Australia,AU0,South Australia,AU4,Barossa - Angaston,AU405011110
+Australia,AU0,South Australia,AU4,Belair,AU403031065
+Australia,AU0,South Australia,AU4,Blackwood,AU403031067
+Australia,AU0,South Australia,AU4,Burnside - Wattle Park,AU401031011
+Australia,AU0,South Australia,AU4,Christie Downs,AU403041073
+Australia,AU0,South Australia,AU4,Christies Beach,AU403041074
+Australia,AU0,South Australia,AU4,Clarendon,AU403041075
+Australia,AU0,South Australia,AU4,Davoren Park,AU402021029
+Australia,AU0,South Australia,AU4,Dry Creek - North,AU402041039
+Australia,AU0,South Australia,AU4,Elizabeth,AU402021030
+Australia,AU0,South Australia,AU4,Eyre Peninsula,AU406011130
+Australia,AU0,South Australia,AU4,Flagstaff Hill,AU403041077
+Australia,AU0,South Australia,AU4,Flinders Ranges,AU406021140
+Australia,AU0,South Australia,AU4,Gawler - South,AU402011026
+Australia,AU0,South Australia,AU4,Gilbert Valley,AU405021117
+Australia,AU0,South Australia,AU4,Glenside - Beaumont,AU401031012
+Australia,AU0,South Australia,AU4,Golden Grove,AU402051049
+Australia,AU0,South Australia,AU4,Goolwa - Port Elliot,AU407011144
+Australia,AU0,South Australia,AU4,Goyder,AU405021118
+Australia,AU0,South Australia,AU4,Grant,AU407021150
+Australia,AU0,South Australia,AU4,Greenwith,AU402051050
+Australia,AU0,South Australia,AU4,Hackham - Onkaparinga Hills,AU403041078
+Australia,AU0,South Australia,AU4,Hahndorf - Echunga,AU401021005
+Australia,AU0,South Australia,AU4,Hallett Cove,AU403021059
+Australia,AU0,South Australia,AU4,Happy Valley,AU403041080
+Australia,AU0,South Australia,AU4,Highbury - Dernancourt,AU402051051
+Australia,AU0,South Australia,AU4,Hindmarsh - Brompton,AU404011093
+Australia,AU0,South Australia,AU4,Hope Valley - Modbury,AU402051052
+Australia,AU0,South Australia,AU4,Ingle Farm,AU402041040
+Australia,AU0,South Australia,AU4,Jamestown,AU405031120
+Australia,AU0,South Australia,AU4,Kadina,AU405041124
+Australia,AU0,South Australia,AU4,Kangaroo Island,AU407011145
+Australia,AU0,South Australia,AU4,Karoonda - Lameroo,AU407031161
+Australia,AU0,South Australia,AU4,Kimba - Cleve - Franklin Harbour,AU406011131
+Australia,AU0,South Australia,AU4,Kingston - Robe,AU407021151
+Australia,AU0,South Australia,AU4,Le Hunte - Elliston,AU406011132
+Australia,AU0,South Australia,AU4,Light,AU405011111
+Australia,AU0,South Australia,AU4,Lobethal - Woodside,AU401021006
+Australia,AU0,South Australia,AU4,Lonsdale,AU403041082
+Australia,AU0,South Australia,AU4,Loxton Region,AU407031163
+Australia,AU0,South Australia,AU4,Lyndoch,AU405011112
+Australia,AU0,South Australia,AU4,Mallala,AU405011113
+Australia,AU0,South Australia,AU4,Mannum,AU407031164
+Australia,AU0,South Australia,AU4,McLaren Vale,AU403041083
+Australia,AU0,South Australia,AU4,Mitcham (SA),AU403031069
+Australia,AU0,South Australia,AU4,Modbury Heights,AU402051053
+Australia,AU0,South Australia,AU4,Moonta,AU405041125
+Australia,AU0,South Australia,AU4,Morphett Vale - East,AU403041084
+Australia,AU0,South Australia,AU4,Morphett Vale - West,AU403041085
+Australia,AU0,South Australia,AU4,Mount Barker,AU401021007
+Australia,AU0,South Australia,AU4,Mount Barker Region,AU401021008
+Australia,AU0,South Australia,AU4,Mount Gambier,AU407021153
+Australia,AU0,South Australia,AU4,Munno Para West - Angle Vale,AU402021032
+Australia,AU0,South Australia,AU4,Murray Bridge Region,AU407031166
+Australia,AU0,South Australia,AU4,Naracoorte Region,AU407021155
+Australia,AU0,South Australia,AU4,North Adelaide,AU401011002
+Australia,AU0,South Australia,AU4,Northgate - Oakden - Gilles Plains,AU402031037
+Australia,AU0,South Australia,AU4,One Tree Hill,AU402021033
+Australia,AU0,South Australia,AU4,Outback,AU406021141
+Australia,AU0,South Australia,AU4,Para Hills,AU402041041
+Australia,AU0,South Australia,AU4,Paradise - Newton,AU401041015
+Australia,AU0,South Australia,AU4,Parafield Gardens,AU402041043
+Australia,AU0,South Australia,AU4,Paralowie,AU402041044
+Australia,AU0,South Australia,AU4,Payneham - Felixstow,AU401051018
+Australia,AU0,South Australia,AU4,Penola,AU407021156
+Australia,AU0,South Australia,AU4,Peterborough - Mount Remarkable,AU405031121
+Australia,AU0,South Australia,AU4,Plympton,AU404031107
+Australia,AU0,South Australia,AU4,Port Lincoln,AU406011133
+Australia,AU0,South Australia,AU4,Port Pirie,AU405031122
+Australia,AU0,South Australia,AU4,Port Pirie Region,AU405031123
+Australia,AU0,South Australia,AU4,Renmark Region,AU407031168
+Australia,AU0,South Australia,AU4,Reynella,AU403041086
+Australia,AU0,South Australia,AU4,Roxby Downs,AU406021143
+Australia,AU0,South Australia,AU4,Royal Park - Hendon - Albert Park,AU404011094
+Australia,AU0,South Australia,AU4,Salisbury,AU402041046
+Australia,AU0,South Australia,AU4,Salisbury East,AU402041047
+Australia,AU0,South Australia,AU4,Salisbury North,AU402041048
+Australia,AU0,South Australia,AU4,Seaford (SA),AU403041087
+Australia,AU0,South Australia,AU4,Seaton - Grange,AU404011095
+Australia,AU0,South Australia,AU4,Sheidow Park - Trott Park,AU403021063
+Australia,AU0,South Australia,AU4,St Peters - Marden,AU401051019
+Australia,AU0,South Australia,AU4,Strathalbyn Region,AU407011147
+Australia,AU0,South Australia,AU4,Tanunda,AU405011115
+Australia,AU0,South Australia,AU4,Tatiara,AU407021157
+Australia,AU0,South Australia,AU4,The Coorong,AU407031169
+Australia,AU0,South Australia,AU4,Toorak Gardens,AU401031013
+Australia,AU0,South Australia,AU4,Uraidla - Summertown,AU401021010
+Australia,AU0,South Australia,AU4,Victor Harbor,AU407011148
+Australia,AU0,South Australia,AU4,Virginia - Waterloo Corner,AU402021035
+Australia,AU0,South Australia,AU4,Waikerie,AU407031170
+Australia,AU0,South Australia,AU4,Wakefield - Barunga West,AU405021119
+Australia,AU0,South Australia,AU4,Walkerville,AU401061022
+Australia,AU0,South Australia,AU4,Wattle Range,AU407021158
+Australia,AU0,South Australia,AU4,West Coast (SA),AU406011134
+Australia,AU0,South Australia,AU4,West Lakes,AU404011096
+Australia,AU0,South Australia,AU4,Willunga,AU403041088
+Australia,AU0,South Australia,AU4,Windsor Gardens,AU402031038
+Australia,AU0,South Australia,AU4,Woodcroft,AU403041089
+Australia,AU0,South Australia,AU4,Woodville - Cheltenham,AU404011097
+Australia,AU0,South Australia,AU4,Yankalilla,AU407011149
+Australia,AU0,South Australia,AU4,Yorke Peninsula - North,AU405041127
+Australia,AU0,South Australia,AU4,Yorke Peninsula - South,AU405041128
+Australia,AU0,Tasmania,AU6,Beauty Point - Beaconsfield,AU602021053
+Australia,AU0,Tasmania,AU6,Berriedale - Chigwell,AU601031014
+Australia,AU0,Tasmania,AU6,Bridgewater - Gagebrook,AU601011001
+Australia,AU0,Tasmania,AU6,Brighton - Pontville,AU601011002
+Australia,AU0,Tasmania,AU6,Bruny Island - Kettering,AU603021069
+Australia,AU0,Tasmania,AU6,Burnie - Ulverstone Region,AU604011076
+Australia,AU0,Tasmania,AU6,Cambridge,AU601021005
+Australia,AU0,Tasmania,AU6,Central Highlands,AU603011065
+Australia,AU0,Tasmania,AU6,Deloraine,AU602021054
+Australia,AU0,Tasmania,AU6,Derwent Valley,AU603011066
+Australia,AU0,Tasmania,AU6,Dilston - Lilydale,AU602031058
+Australia,AU0,Tasmania,AU6,Dodges Ferry - Lewisham,AU601061034
+Australia,AU0,Tasmania,AU6,Forestier - Tasman,AU603031073
+Australia,AU0,Tasmania,AU6,George Town,AU602031059
+Australia,AU0,Tasmania,AU6,Grindelwald - Lanena,AU602021055
+Australia,AU0,Tasmania,AU6,Hadspen - Carrick,AU602021056
+Australia,AU0,Tasmania,AU6,King Island,AU604031093
+Australia,AU0,Tasmania,AU6,Latrobe,AU604021087
+Australia,AU0,Tasmania,AU6,Longford,AU602031060
+Australia,AU0,Tasmania,AU6,Margate - Snug,AU601041024
+Australia,AU0,Tasmania,AU6,Mount Wellington,AU601041025
+Australia,AU0,Tasmania,AU6,New Norfolk,AU601031020
+Australia,AU0,Tasmania,AU6,North West,AU604031094
+Australia,AU0,Tasmania,AU6,Northern Midlands,AU602031061
+Australia,AU0,Tasmania,AU6,Penguin - Sulphur Creek,AU604011079
+Australia,AU0,Tasmania,AU6,Perth - Evandale,AU602031062
+Australia,AU0,Tasmania,AU6,Port Sorell,AU604021089
+Australia,AU0,Tasmania,AU6,Prospect Vale - Blackstone,AU602011044
+Australia,AU0,Tasmania,AU6,Scottsdale - Bridport,AU602031063
+Australia,AU0,Tasmania,AU6,Sheffield - Railton,AU604021091
+Australia,AU0,Tasmania,AU6,Sorell - Richmond,AU601061035
+Australia,AU0,Tasmania,AU6,South Hobart - Fern Tree,AU601051032
+Australia,AU0,Tasmania,AU6,Southern Midlands,AU603011067
+Australia,AU0,Tasmania,AU6,St Helens - Scamander,AU602031064
+Australia,AU0,Tasmania,AU6,Triabunna - Bicheno,AU603031074
+Australia,AU0,Tasmania,AU6,Turners Beach - Forth,AU604021092
+Australia,AU0,Tasmania,AU6,Ulverstone,AU604011082
+Australia,AU0,Tasmania,AU6,Waratah,AU604031096
+Australia,AU0,Tasmania,AU6,West Coast (Tas.),AU604031097
+Australia,AU0,Tasmania,AU6,Wilderness - East,AU603011068
+Australia,AU0,Tasmania,AU6,Wilderness - West,AU604031098
+Australia,AU0,Tasmania,AU6,Wynyard,AU604011084
+Australia,AU0,Victoria,AU2,Albert Park,AU206051128
+Australia,AU0,Victoria,AU2,Alexandra,AU204011054
+Australia,AU0,Victoria,AU2,Alps - West,AU205051099
+Australia,AU0,Victoria,AU2,Ararat Region,AU215011387
+Australia,AU0,Victoria,AU2,Avoca,AU201031013
+Australia,AU0,Victoria,AU2,Bacchus Marsh,AU213041353
+Australia,AU0,Victoria,AU2,Bacchus Marsh Region,AU201021009
+Australia,AU0,Victoria,AU2,Ballarat,AU201011002
+Australia,AU0,Victoria,AU2,Ballarat - North,AU201011003
+Australia,AU0,Victoria,AU2,Ballarat - South,AU201011004
+Australia,AU0,Victoria,AU2,Balwyn,AU207011147
+Australia,AU0,Victoria,AU2,Balwyn North,AU207011148
+Australia,AU0,Victoria,AU2,Bayswater North,AU211031263
+Australia,AU0,Victoria,AU2,Beaufort,AU201031014
+Australia,AU0,Victoria,AU2,Belgrave - Selby,AU211051274
+Australia,AU0,Victoria,AU2,Benalla,AU204021063
+Australia,AU0,Victoria,AU2,Benalla Region,AU204021064
+Australia,AU0,Victoria,AU2,Bendigo,AU202011018
+Australia,AU0,Victoria,AU2,Bendigo Region - North,AU202031032
+Australia,AU0,Victoria,AU2,Bendigo Region - South,AU202021026
+Australia,AU0,Victoria,AU2,Boronia - The Basin,AU211011252
+Australia,AU0,Victoria,AU2,Bright - Mount Beauty,AU204031069
+Australia,AU0,Victoria,AU2,Bruthen - Omeo,AU205021082
+Australia,AU0,Victoria,AU2,Buloke,AU215031400
+Australia,AU0,Victoria,AU2,Buninyong,AU201011005
+Australia,AU0,Victoria,AU2,Bunyip - Garfield,AU212011288
+Australia,AU0,Victoria,AU2,California Gully - Eaglehawk,AU202011019
+Australia,AU0,Victoria,AU2,Carrum - Patterson Lakes,AU208031185
+Australia,AU0,Victoria,AU2,Castlemaine Region,AU202021028
+Australia,AU0,Victoria,AU2,Chiltern - Indigo Valley,AU204031070
+Australia,AU0,Victoria,AU2,Churchill,AU205041094
+Australia,AU0,Victoria,AU2,Coburg,AU206011108
+Australia,AU0,Victoria,AU2,Coburg North,AU210031236
+Australia,AU0,Victoria,AU2,Colac,AU217021425
+Australia,AU0,Victoria,AU2,Colac Region,AU217021426
+Australia,AU0,Victoria,AU2,Corangamite - North,AU217021427
+Australia,AU0,Victoria,AU2,Corangamite - South,AU217021428
+Australia,AU0,Victoria,AU2,Corio - Norlane,AU203021038
+Australia,AU0,Victoria,AU2,Craigieburn - Mickleham,AU210051244
+Australia,AU0,Victoria,AU2,Cranbourne South,AU212031303
+Australia,AU0,Victoria,AU2,Creswick - Clunes,AU201021010
+Australia,AU0,Victoria,AU2,Croydon,AU211031264
+Australia,AU0,Victoria,AU2,Croydon Hills - Warranwood,AU211031265
+Australia,AU0,Victoria,AU2,Dandenong,AU212041311
+Australia,AU0,Victoria,AU2,Daylesford,AU201021011
+Australia,AU0,Victoria,AU2,East Bendigo - Kennington,AU202011020
+Australia,AU0,Victoria,AU2,Echuca,AU216011406
+Australia,AU0,Victoria,AU2,Eltham,AU209031209
+Australia,AU0,Victoria,AU2,Emerald - Cockatoo,AU212011289
+Australia,AU0,Victoria,AU2,Euroa,AU204011055
+Australia,AU0,Victoria,AU2,Ferntree Gully,AU211011253
+Australia,AU0,Victoria,AU2,Flinders,AU214021378
+Australia,AU0,Victoria,AU2,Flora Hill - Spring Gully,AU202011021
+Australia,AU0,Victoria,AU2,Foster,AU205031087
+Australia,AU0,Victoria,AU2,Gannawarra,AU215031401
+Australia,AU0,Victoria,AU2,Geelong,AU203021039
+Australia,AU0,Victoria,AU2,Gisborne,AU210021232
+Australia,AU0,Victoria,AU2,Glenelg (Vic.),AU217011420
+Australia,AU0,Victoria,AU2,Golden Plains - North,AU201031015
+Australia,AU0,Victoria,AU2,Golden Plains - South,AU203011035
+Australia,AU0,Victoria,AU2,Gordon (Vic.),AU201021012
+Australia,AU0,Victoria,AU2,Greenvale - Bulla,AU210051246
+Australia,AU0,Victoria,AU2,Grovedale,AU203021041
+Australia,AU0,Victoria,AU2,Hamilton (Vic.),AU217011421
+Australia,AU0,Victoria,AU2,Hastings - Somers,AU214021379
+Australia,AU0,Victoria,AU2,Hawthorn,AU207011151
+Australia,AU0,Victoria,AU2,Hawthorn East,AU207011152
+Australia,AU0,Victoria,AU2,Healesville - Yarra Glen,AU211051276
+Australia,AU0,Victoria,AU2,Heathcote,AU202021029
+Australia,AU0,Victoria,AU2,Highton,AU203021042
+Australia,AU0,Victoria,AU2,Hillside,AU213041355
+Australia,AU0,Victoria,AU2,Horsham,AU215011388
+Australia,AU0,Victoria,AU2,Horsham Region,AU215011389
+Australia,AU0,Victoria,AU2,Kangaroo Flat - Golden Square,AU202011022
+Australia,AU0,Victoria,AU2,Keilor,AU210011228
+Australia,AU0,Victoria,AU2,Keysborough,AU212041314
+Australia,AU0,Victoria,AU2,Kilmore - Broadford,AU204011056
+Australia,AU0,Victoria,AU2,Knoxfield - Scoresby,AU211011254
+Australia,AU0,Victoria,AU2,Koo Wee Rup,AU212011290
+Australia,AU0,Victoria,AU2,Korumburra,AU205031089
+Australia,AU0,Victoria,AU2,Kyabram,AU216011407
+Australia,AU0,Victoria,AU2,Kyneton,AU202021030
+Australia,AU0,Victoria,AU2,Langwarrin,AU214011374
+Australia,AU0,Victoria,AU2,Lara,AU203021043
+Australia,AU0,Victoria,AU2,Leongatha,AU205031090
+Australia,AU0,Victoria,AU2,Leopold,AU203021044
+Australia,AU0,Victoria,AU2,Lilydale - Coldstream,AU211051278
+Australia,AU0,Victoria,AU2,Lockington - Gunbower,AU216011408
+Australia,AU0,Victoria,AU2,Loddon,AU202031033
+Australia,AU0,Victoria,AU2,Longford - Loch Sport,AU205051100
+Australia,AU0,Victoria,AU2,Lorne - Anglesea,AU203031049
+Australia,AU0,Victoria,AU2,Lysterfield,AU211011255
+Australia,AU0,Victoria,AU2,Maffra,AU205051101
+Australia,AU0,Victoria,AU2,Malvern - Glen Iris,AU208041194
+Australia,AU0,Victoria,AU2,Malvern East,AU208041195
+Australia,AU0,Victoria,AU2,Mansfield (Vic.),AU204011057
+Australia,AU0,Victoria,AU2,Maryborough (Vic.),AU201031016
+Australia,AU0,Victoria,AU2,Maryborough Region,AU201031017
+Australia,AU0,Victoria,AU2,Melton,AU213041356
+Australia,AU0,Victoria,AU2,Melton South,AU213041357
+Australia,AU0,Victoria,AU2,Mildura Region,AU215021398
+Australia,AU0,Victoria,AU2,Mitcham (Vic.),AU211041270
+Australia,AU0,Victoria,AU2,Moe - Newborough,AU205041095
+Australia,AU0,Victoria,AU2,Moira,AU216021412
+Australia,AU0,Victoria,AU2,Monbulk - Silvan,AU211051279
+Australia,AU0,Victoria,AU2,Mount Baw Baw Region,AU205011077
+Australia,AU0,Victoria,AU2,Mount Dandenong - Olinda,AU211051282
+Australia,AU0,Victoria,AU2,Mount Martha,AU214021382
+Australia,AU0,Victoria,AU2,Moyne - East,AU217021429
+Australia,AU0,Victoria,AU2,Moyne - West,AU217021430
+Australia,AU0,Victoria,AU2,Myrtleford,AU204031071
+Australia,AU0,Victoria,AU2,Nagambie,AU204011058
+Australia,AU0,Victoria,AU2,Narre Warren North,AU212021299
+Australia,AU0,Victoria,AU2,Newcomb - Moolap,AU203021045
+Australia,AU0,Victoria,AU2,Nhill Region,AU215011390
+Australia,AU0,Victoria,AU2,Numurkah,AU216021413
+Australia,AU0,Victoria,AU2,Ocean Grove - Barwon Heads,AU203031050
+Australia,AU0,Victoria,AU2,Orbost,AU205021085
+Australia,AU0,Victoria,AU2,Otway,AU217021431
+Australia,AU0,Victoria,AU2,Panton Hill - St Andrews,AU209031212
+Australia,AU0,Victoria,AU2,Paynesville,AU205021086
+Australia,AU0,Victoria,AU2,Pearcedale - Tooradin,AU212031308
+Australia,AU0,Victoria,AU2,Phillip Island,AU205031091
+Australia,AU0,Victoria,AU2,Point Cook,AU213051364
+Australia,AU0,Victoria,AU2,Portland,AU217011422
+Australia,AU0,Victoria,AU2,Preston,AU209021206
+Australia,AU0,Victoria,AU2,Research - North Warrandyte,AU209031214
+Australia,AU0,Victoria,AU2,Reservoir - West,AU209021208
+Australia,AU0,Victoria,AU2,Richmond (Vic.),AU206071144
+Australia,AU0,Victoria,AU2,Rockbank - Mount Cottrell,AU213041359
+Australia,AU0,Victoria,AU2,Romsey,AU210021235
+Australia,AU0,Victoria,AU2,Rosedale,AU205051102
+Australia,AU0,Victoria,AU2,Rushworth,AU216011410
+Australia,AU0,Victoria,AU2,Rutherglen,AU204021065
+Australia,AU0,Victoria,AU2,Sale,AU205051103
+Australia,AU0,Victoria,AU2,Seymour Region,AU204011060
+Australia,AU0,Victoria,AU2,Shepparton - South,AU216031417
+Australia,AU0,Victoria,AU2,Shepparton Region - East,AU216031418
+Australia,AU0,Victoria,AU2,Shepparton Region - West,AU216031419
+Australia,AU0,Victoria,AU2,Skye - Sandhurst,AU214011376
+Australia,AU0,Victoria,AU2,Somerville,AU214021385
+Australia,AU0,Victoria,AU2,Southern Grampians,AU217011423
+Australia,AU0,Victoria,AU2,St Arnaud,AU215011391
+Australia,AU0,Victoria,AU2,Stawell,AU215011392
+Australia,AU0,Victoria,AU2,Strathfieldsaye,AU202011024
+Australia,AU0,Victoria,AU2,Sunbury,AU210041240
+Australia,AU0,Victoria,AU2,Sunbury - South,AU210041241
+Australia,AU0,Victoria,AU2,Swan Hill,AU215031404
+Australia,AU0,Victoria,AU2,Swan Hill Region,AU215031405
+Australia,AU0,Victoria,AU2,Tarneit,AU213051365
+Australia,AU0,Victoria,AU2,Taylors Lakes,AU213011340
+Australia,AU0,Victoria,AU2,Templestowe,AU207021159
+Australia,AU0,Victoria,AU2,Towong,AU204031072
+Australia,AU0,Victoria,AU2,Trafalgar (Vic.),AU205011078
+Australia,AU0,Victoria,AU2,Traralgon,AU205041097
+Australia,AU0,Victoria,AU2,Upper Yarra Valley,AU204011061
+Australia,AU0,Victoria,AU2,Vermont South,AU211041273
+Australia,AU0,Victoria,AU2,Wallan,AU209041224
+Australia,AU0,Victoria,AU2,Wandin - Seville,AU211051285
+Australia,AU0,Victoria,AU2,Wangaratta,AU204021066
+Australia,AU0,Victoria,AU2,Wangaratta Region,AU204021067
+Australia,AU0,Victoria,AU2,Wantirna,AU211011259
+Australia,AU0,Victoria,AU2,Wantirna South,AU211011260
+Australia,AU0,Victoria,AU2,Warrandyte - Wonga Park,AU211021262
+Australia,AU0,Victoria,AU2,Warrnambool - South,AU217021433
+Australia,AU0,Victoria,AU2,Werribee,AU213051367
+Australia,AU0,Victoria,AU2,Werribee - South,AU213051368
+Australia,AU0,Victoria,AU2,West Wimmera,AU215011393
+Australia,AU0,Victoria,AU2,West Wodonga,AU204031073
+Australia,AU0,Victoria,AU2,White Hills - Ascot,AU202011025
+Australia,AU0,Victoria,AU2,Whittlesea,AU209041225
+Australia,AU0,Victoria,AU2,Wilsons Promontory,AU205031092
+Australia,AU0,Victoria,AU2,Winchelsea,AU203011036
+Australia,AU0,Victoria,AU2,Wodonga,AU204031074
+Australia,AU0,Victoria,AU2,Wonthaggi - Inverloch,AU205031093
+Australia,AU0,Victoria,AU2,Woodend,AU202021031
+Australia,AU0,Victoria,AU2,Wyndham Vale,AU213051369
+Australia,AU0,Victoria,AU2,Yackandandah,AU204031075
+Australia,AU0,Victoria,AU2,Yallourn North - Glengarry,AU205041098
+Australia,AU0,Victoria,AU2,Yarra - North,AU206071145
+Australia,AU0,Victoria,AU2,Yarra Valley,AU211051286
+Australia,AU0,Victoria,AU2,Yarram,AU205051104
+Australia,AU0,Victoria,AU2,Yarriambiack,AU215011394
+Australia,AU0,Victoria,AU2,Yea,AU204011062
+Australia,AU0,Western Australia,AU5,Albany,AU509011225
+Australia,AU0,Western Australia,AU5,Albany Region,AU509011226
+Australia,AU0,Western Australia,AU5,Ashendon - Lesley,AU506011111
+Australia,AU0,Western Australia,AU5,Augusta,AU501011001
+Australia,AU0,Western Australia,AU5,Baldivis,AU507051185
+Australia,AU0,Western Australia,AU5,Bridgetown - Boyup Brook,AU501031017
+Australia,AU0,Western Australia,AU5,Brookton,AU509031246
+Australia,AU0,Western Australia,AU5,Bunbury,AU501021006
+Australia,AU0,Western Australia,AU5,Busselton Region,AU501011003
+Australia,AU0,Western Australia,AU5,Capel,AU501021007
+Australia,AU0,Western Australia,AU5,Chidlow,AU504021049
+Australia,AU0,Western Australia,AU5,Chittering,AU509021236
+Australia,AU0,Western Australia,AU5,Collie,AU501021009
+Australia,AU0,Western Australia,AU5,Cunderdin,AU509021237
+Australia,AU0,Western Australia,AU5,Dardanup,AU501021010
+Australia,AU0,Western Australia,AU5,Dawesville - Bouvard,AU502011021
+Australia,AU0,Western Australia,AU5,Denmark,AU509011228
+Australia,AU0,Western Australia,AU5,Derby - West Kimberley,AU508041206
+Australia,AU0,Western Australia,AU5,Donnybrook - Balingup,AU501031018
+Australia,AU0,Western Australia,AU5,Dowerin,AU509021238
+Australia,AU0,Western Australia,AU5,Esperance Region,AU508011195
+Australia,AU0,Western Australia,AU5,Exmouth,AU508021197
+Australia,AU0,Western Australia,AU5,Gelorup - Dalyellup - Stratham,AU501021013
+Australia,AU0,Western Australia,AU5,Geraldton,AU508051210
+Australia,AU0,Western Australia,AU5,Geraldton - East,AU508051211
+Australia,AU0,Western Australia,AU5,Geraldton - North,AU508051212
+Australia,AU0,Western Australia,AU5,Gidgegannup,AU504031060
+Australia,AU0,Western Australia,AU5,Gingin - Dandaragan,AU509021239
+Australia,AU0,Western Australia,AU5,Gnowangerup,AU509011229
+Australia,AU0,Western Australia,AU5,Harvey,AU501021014
+Australia,AU0,Western Australia,AU5,Irwin,AU508051214
+Australia,AU0,Western Australia,AU5,Kambalda - Coolgardie - Norseman,AU508031202
+Australia,AU0,Western Australia,AU5,Karrinyup - Gwelup - Carine,AU505021089
+Australia,AU0,Western Australia,AU5,Katanning,AU509011230
+Australia,AU0,Western Australia,AU5,Kings Park (WA),AU503021037
+Australia,AU0,Western Australia,AU5,Kojonup,AU509011231
+Australia,AU0,Western Australia,AU5,Koombana,AU501021015
+Australia,AU0,Western Australia,AU5,Kulin,AU509031247
+Australia,AU0,Western Australia,AU5,Kununurra,AU508041208
+Australia,AU0,Western Australia,AU5,Leinster - Leonora,AU508031203
+Australia,AU0,Western Australia,AU5,Lesmurdie - Bickley - Carmel,AU506051141
+Australia,AU0,Western Australia,AU5,Maddington - Orange Grove - Martin,AU506041136
+Australia,AU0,Western Australia,AU5,Madeley - Darch - Landsdale,AU505031103
+Australia,AU0,Western Australia,AU5,Malmalling - Reservoir,AU504021052
+Australia,AU0,Western Australia,AU5,Meekatharra,AU508051215
+Australia,AU0,Western Australia,AU5,Merredin,AU509021240
+Australia,AU0,Western Australia,AU5,Moora,AU509021241
+Australia,AU0,Western Australia,AU5,Morawa,AU508051216
+Australia,AU0,Western Australia,AU5,Mount Hawthorn - Leederville,AU503021038
+Australia,AU0,Western Australia,AU5,Mukinbudin,AU509021242
+Australia,AU0,Western Australia,AU5,Mundijong,AU506061143
+Australia,AU0,Western Australia,AU5,Murray,AU509031248
+Australia,AU0,Western Australia,AU5,Narrogin,AU509031249
+Australia,AU0,Western Australia,AU5,North Perth,AU503021040
+Australia,AU0,Western Australia,AU5,Northam,AU509021243
+Australia,AU0,Western Australia,AU5,Northampton - Mullewa - Greenough,AU508051217
+Australia,AU0,Western Australia,AU5,Pemberton,AU501031020
+Australia,AU0,Western Australia,AU5,Perth City,AU503021041
+Australia,AU0,Western Australia,AU5,Pinjarra,AU502011029
+Australia,AU0,Western Australia,AU5,Plantagenet,AU509011234
+Australia,AU0,Western Australia,AU5,Roebuck,AU508041209
+Australia,AU0,Western Australia,AU5,Serpentine - Jarrahdale,AU506061144
+Australia,AU0,Western Australia,AU5,Subiaco - Shenton Park,AU503021042
+Australia,AU0,Western Australia,AU5,Toodyay,AU509021244
+Australia,AU0,Western Australia,AU5,Wagin,AU509031250
+Australia,AU0,Western Australia,AU5,Waroona,AU501021016
+Australia,AU0,Western Australia,AU5,Yanchep,AU505031109
+Australia,AU0,Western Australia,AU5,York - Beverley,AU509021245

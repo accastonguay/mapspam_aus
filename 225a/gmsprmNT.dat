@@ -1,0 +1,10 @@
+Input=C:\Users\CHA780\AppData\Local\R\win-library\4.3\mapspamc\gams\min_entropy.gms
+Output=c:\temp\mapspamc_aus\processed_data\intermediate_output\min_entropy_5min_adm_level_2_solve_level_0\AU0\\spamc_min_entropy_5min_2010_AU0_AUS.lst
+ScrDir=225a
+SysDir=C:\GAMS\41
+ScriptNext=225a\gamsnext.cmd
+LogOption=4
+LogFile=c:\temp\mapspamc_aus\processed_data\intermediate_output\min_entropy_5min_adm_level_2_solve_level_0\AU0\spamc_min_entropy_5min_2010_AU0_AUS.log
+Solver=IPOPT
+--gdx_input=c:\temp\mapspamc_aus\processed_data\intermediate_output\min_entropy_5min_adm_level_2_solve_level_0\AU0\input_5min_2010_AU0_AUS.gdx
+--gdx_output=c:\temp\mapspamc_aus\processed_data\intermediate_output\min_entropy_5min_adm_level_2_solve_level_0\AU0\\spamc_min_entropy_5min_2010_AU0_AUS.gdx
