@@ -1,4 +1,4 @@
-spam_crops,abs_crops
+crop,abs_crops
 bana,"Fruit trees, nut trees, plantation or berry fruits"
 barl,Other cereals for grain or seed
 bean,Other broadacre crops
@@ -31,3 +31,11 @@ toba,Other broadacre crops
 trof,"Fruit trees, nut trees, plantation or berry fruits"
 vege,Vegetables for human consumption or seed
 whea,Other cereals for grain or seed
+swpo,Other
+yams,Other
+cowp,Other
+cnut,Other
+sesa,Other
+ofib,Other
+teas,Other
+plnt,Other
