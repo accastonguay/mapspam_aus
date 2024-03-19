@@ -43,10 +43,10 @@ names(adm_map)
 adm_map <- adm_map %>%
   mutate(
   ADM0_NAME = 'Australia',
-  FIPS0 = 0)
+  adm0_code = 0)
 
 adm0_name_orig <- "ADM0_NAME"
-adm0_code_orig <- "FIPS0"
+adm0_code_orig <- "adm0_code"
 
 adm1_name_orig <- "STE_NAME11"
 adm1_code_orig <- "STE_CODE11"
@@ -87,22 +87,31 @@ adm_map <- adm_map %>%
 # adm1_to_remove <- c("")
 # adm2_to_remove <- c("")
 
+# adm_to_remove <- read.csv("C:/Temp/mapspamc_aus/processed_data/adm_to_remove.csv")
 
-adm_to_remove <- read.csv("C:/Temp/mapspamc_aus/processed_data/adm_to_remove.csv")
+aus_stats <- read.csv('C:/Temp/mapspamc_db/subnational_statistics/AUS/T_yield_2000_ASGS_SA211.csv')
+
+adm_to_remove <- adm_map_raw %>% 
+  as.data.frame() %>%
+  # select(SA2_MAIN11) %>%
+  mutate(SA2_MAIN11 = as.integer(SA2_MAIN11)) %>%
+  left_join(aus_stats, by = c("SA2_MAIN11"  = "SA2_ID")) %>%
+  # select(SA2_MAIN11, SPREAD_Commodity, ha_ASGS) %>%
+  filter(!SPREAD_Commodity %in% c('Eggs' , "Beef Cattle", "Dairy Cattle", "Sheep", "Hay")) %>%
+  group_by(SA2_MAIN11, SA2_NAME11 ) %>%
+  summarise(total_area = sum(ha_ASGS, na.rm = TRUE)) %>%
+  filter(total_area > 0)
 
 # Remove ADMs
 adm_map <- adm_map %>%
-  filter(!adm2_code  %in% adm_to_remove$adm_code)
+  filter(adm2_code  %in% adm_to_remove$SA2_MAIN11)
 # %>%
   # filter(!adm2_name %in% adm2_to_remove)
 
 # plot(adm_map$geometry, main = "ADM polygons removed")
 # par(mfrow=c(1,1))
 
-####### ADAM note ##########
-# Better start adm code with character to avoid left_join error later on
-
-
+####### start adm code with character to avoid left_join error later on ##########
 adm_map <- adm_map %>%
   mutate(adm0_code = paste0('AU', adm0_code),
          adm1_code = paste0('AU', adm1_code),

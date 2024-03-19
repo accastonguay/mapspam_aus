@@ -51,18 +51,6 @@ param <- mapspamc_par(
   solve_level = 0,
   model = "min_entropy")
 
-# # Set mapspamc parameters for the max_score_30sec_adm_level_2_solve_level_0 model
-# param <- mapspamc_par(
-#   model_path = model_path,
-#   db_path = db_path,
-#   gams_path = gams_path,
-#   iso3c = "MWI",
-#   year = 2010,
-#   res = "30sec",
-#   adm_level = 2,
-#   solve_level = 0,
-#   model = "max_score")
-
 
 # Show parameters
 print(param)
