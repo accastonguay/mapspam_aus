@@ -6,7 +6,7 @@
 #'========================================================================================
 
 # SOURCE PARAMETERS ----------------------------------------------------------------------
-source(here::here("C:/Temp/mapspamc_aus","01_model_setup/01_model_setup.r"))
+source(here::here("01_model_setup/01_model_setup.r"))
 
 
 # LOAD DATA ------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ check_statistics(ha_df, param, out = TRUE)
 fao <- fao_raw %>%
   # filter(year %in% c((param$year-1): (param$year+1))) %>%
   filter(year == 2000) %>%
-  
+
   group_by(crop) %>%
   summarize(ha = mean(value, na.rm = TRUE),
             .groups = "drop") %>%

@@ -6,7 +6,7 @@
 #'========================================================================================================================================
 
 # SOURCE PARAMETERS ----------------------------------------------------------------------
-source(here::here("C:/Temp/mapspamc_aus","01_model_setup/01_model_setup.r"))
+source(here::here("01_model_setup/01_model_setup.r"))
 
 
 # LOAD DATA ------------------------------------------------------------------------------
@@ -24,9 +24,9 @@ copernicus <- rast(file.path(param$model_path,
 
 # Rank table
 st_raw <- read_excel(file.path(param$db_path,
-                               # glue("synergy_cropland_table/synergy_cropland_table_{param$year}.xlsx")),
-                               glue("synergy_cropland_table/synergy_cropland_table_2015.xlsx")),
-                     
+                               glue("synergy_cropland_table/synergy_cropland_table_{param$year}.xlsx")),
+                               #glue("synergy_cropland_table/synergy_cropland_table_2015.xlsx")),
+
                      sheet = "table")%>%
   rename(esri = modis) ############ NEED to rename modis to esri ###############
 
@@ -66,7 +66,7 @@ cl_code <- cl_df %>%
   mutate(code = source,
          # source = factor(source, levels = c("esri", "glad", "copernicus", "esacci"))) %>%
          source = factor(source, levels = c('glad', 'copernicus', 'esacci', 'esri'))) %>%
-  
+
   dplyr::select(-area) %>%
   spread(source, code, fill = "0") %>%
   gather(source, code, -c(grid_id, x, y)) %>%

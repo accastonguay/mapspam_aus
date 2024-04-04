@@ -7,7 +7,7 @@
 
 
 # SOURCE PARAMETERS ----------------------------------------------------------------------
-source(here::here("C:/Temp/mapspamc_aus", "01_model_setup/01_model_setup.r"))
+source(here::here("01_model_setup/01_model_setup.r"))
 
 
 # LOAD DATA ------------------------------------------------------------------------------
@@ -70,12 +70,13 @@ adm_map <- adm_map %>%
 head(adm_map)
 names(adm_map)
 
+# CODE BELOW SOMEHOW CREATES PROBLEMS
 # Union separate polygons that belong to the same adm
-adm_map <- adm_map %>%
-  group_by(adm0_name, adm0_code, adm1_name, adm1_code, adm2_name, adm2_code) %>%
-  summarize(geometry = st_union(geometry),
-            .groups = "drop") %>%
-  ungroup()
+# adm_map <- adm_map %>%
+#   group_by(adm0_name, adm0_code, adm1_name, adm1_code, adm2_name, adm2_code) %>%
+#   summarize(geometry = st_union(geometry),
+#             .groups = "drop") %>%
+#   ungroup()
 
 # par(mfrow=c(1,2))
 # plot(adm_map$geometry, main = "ADM all polygons")
@@ -89,22 +90,22 @@ adm_map <- adm_map %>%
 
 # adm_to_remove <- read.csv("C:/Temp/mapspamc_aus/processed_data/adm_to_remove.csv")
 
-aus_stats <- read.csv('C:/Temp/mapspamc_db/subnational_statistics/AUS/T_yield_2000_ASGS_SA211.csv')
-
-adm_to_remove <- adm_map_raw %>% 
-  as.data.frame() %>%
-  # select(SA2_MAIN11) %>%
-  mutate(SA2_MAIN11 = as.integer(SA2_MAIN11)) %>%
-  left_join(aus_stats, by = c("SA2_MAIN11"  = "SA2_ID")) %>%
-  # select(SA2_MAIN11, SPREAD_Commodity, ha_ASGS) %>%
-  filter(!SPREAD_Commodity %in% c('Eggs' , "Beef Cattle", "Dairy Cattle", "Sheep", "Hay")) %>%
-  group_by(SA2_MAIN11, SA2_NAME11 ) %>%
-  summarise(total_area = sum(ha_ASGS, na.rm = TRUE)) %>%
-  filter(total_area > 0)
+# aus_stats <- read.csv(file.path(param$db_path, "subnational_statistics/AUS/T_yield_2000_ASGS_SA211.csv"))
+#
+# adm_to_remove <- adm_map_raw %>%
+#   as.data.frame() %>%
+#   # select(SA2_MAIN11) %>%
+#   mutate(SA2_MAIN11 = as.integer(SA2_MAIN11)) %>%
+#   left_join(aus_stats, by = c("SA2_MAIN11"  = "SA2_ID")) %>%
+#   # select(SA2_MAIN11, SPREAD_Commodity, ha_ASGS) %>%
+#   filter(!SPREAD_Commodity %in% c('Eggs' , "Beef Cattle", "Dairy Cattle", "Sheep", "Hay")) %>%
+#   group_by(SA2_MAIN11, SA2_NAME11 ) %>%
+#   summarise(total_area = sum(ha_ASGS, na.rm = TRUE)) %>%
+#   filter(total_area <= 0)
 
 # Remove ADMs
-adm_map <- adm_map %>%
-  filter(adm2_code  %in% adm_to_remove$SA2_MAIN11)
+# adm_map <- adm_map %>%
+#   filter(adm2_code  %in% adm_to_remove$SA2_MAIN11)
 # %>%
   # filter(!adm2_name %in% adm2_to_remove)
 
@@ -142,7 +143,7 @@ create_grid(param)
 rasterize_adm_map(param)
 
 
-# 
+#
 # readRDS(file.path(
 #   temp_path,
 #   glue::glue("adm_map_r_{param$res}_{param$year}_{param$iso3c}.rds")

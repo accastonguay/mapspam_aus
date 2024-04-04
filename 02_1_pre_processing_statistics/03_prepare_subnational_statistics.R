@@ -7,7 +7,7 @@
 
 
 # SOURCE PARAMETERS ----------------------------------------------------------------------
-source(here::here("C:/Temp/mapspamc_aus","01_model_setup/01_model_setup.r"))
+source(here::here("01_model_setup/01_model_setup.r"))
 
 # In this script the raw subnational statistics are processed. In order to prevent errors
 # when running the model, it is essential to put the statistics in the right
@@ -20,31 +20,40 @@ source(here::here("C:/Temp/mapspamc_aus","01_model_setup/01_model_setup.r"))
 
 
 # LOAD DATA ------------------------------------------------------------------------------
-aus_stats <- read.csv('C:/Temp/mapspamc_db/subnational_statistics/AUS/T_yield_2000_ASGS_SA211.csv') %>%
+aus_stats <- read.csv(file.path(param$db_path, "subnational_statistics/AUS/T_yield_2000_ASGS_SA211.csv")) %>%
   filter(!SPREAD_Commodity %in% c('Eggs' , "Beef Cattle", "Dairy Cattle", "Sheep", "Hay"))
+adm_list <- read.csv(file.path(param$model_path, "processed_data/lists/adm_list_2000_AUS.csv"))
 
 iso3c_shp <- "SA2_2011_AUST.shp"
 
-# load shapefile
-adm_map_raw <- sf::read_sf(file.path(param$db_path, glue("adm/{param$iso3c}/{iso3c_shp}")))
-abs2crop <- read.csv("C:/Temp/mapspamc_aus/mappings/ABS2crop.csv")
 
-stats_df <- abs2crop %>% 
+#' I think things go wrong here. I recommend the following:
+#' 1. Aggregate aus_stats to mapspamc crops and adm2 (=SA2_ID)
+#' 2. Rename SA2_ID to adm2_code and make sure it is consistent with adm_list!!!!
+#' 3. Add code that calculates adm0, adm1 and adm2 aggregates by crop and bind them by adding adm_level = 0, 1, etc
+
+
+# load shapefile
+adm_map_raw <- sf::read_sf(file.path(param$db_path, glue("adm/{param$iso3c}/{iso3c_shp}"))) |>
+  st_drop_geometry()
+abs2crop <- read.csv(file.path(param$db_path, glue("subnational_statistics/{param$iso3c}/ABS2crop.csv")))
+
+stats_df <- abs2crop %>%
   left_join(aus_stats, by = "Commodity") %>%
   filter(!is.na(crop))%>%
     # distinct(crop ) %>%
   mutate(SA2_MAIN11 = as.character(SA2_ID)) %>%
-  left_join(as.data.frame(adm_map_raw), by = "SA2_MAIN11") %>%
+  left_join(adm_map_raw, by = "SA2_MAIN11") %>%
   select(SA2_MAIN11, Commodity, crop , ha_ASGS , STE_NAME11, STE_CODE11)
 
-adm_list <- read.csv("C:/Temp/mapspamc_aus/processed_data/lists/adm_list_2010_AUS.csv")
 
-adm_list_wide <- dplyr::bind_rows(adm_list %>% dplyr::select_at(vars(contains("adm0"))) %>% 
-                                    setNames(c("adm_name", "adm_code")) %>% dplyr::mutate(adm_level = 0) %>% 
-                                    unique(), adm_list %>% dplyr::select_at(vars(contains("adm1"))) %>% 
-                                    setNames(c("adm_name", "adm_code")) %>% dplyr::mutate(adm_level = 1) %>% 
-                                    unique(), adm_list %>% dplyr::select_at(vars(contains("adm2"))) %>% 
-                                    setNames(c("adm_name", "adm_code")) %>% dplyr::mutate(adm_level = 2) %>% 
+
+adm_list_wide <- dplyr::bind_rows(adm_list %>% dplyr::select_at(vars(contains("adm0"))) %>%
+                                    setNames(c("adm_name", "adm_code")) %>% dplyr::mutate(adm_level = 0) %>%
+                                    unique(), adm_list %>% dplyr::select_at(vars(contains("adm1"))) %>%
+                                    setNames(c("adm_name", "adm_code")) %>% dplyr::mutate(adm_level = 1) %>%
+                                    unique(), adm_list %>% dplyr::select_at(vars(contains("adm2"))) %>%
+                                    setNames(c("adm_name", "adm_code")) %>% dplyr::mutate(adm_level = 2) %>%
                                     unique())
 
 # ha_template <- adm_list_wide %>% dplyr::filter(adm_level %in%
@@ -54,11 +63,11 @@ adm_list_wide <- dplyr::bind_rows(adm_list %>% dplyr::select_at(vars(contains("a
 stats_dfadm2 <- stats_df %>%
   select(SA2_MAIN11, crop, ha_ASGS) %>%
   mutate(adm_level = 2) %>%
-  
+
   group_by(SA2_MAIN11,adm_level, crop) %>%
   summarize(ha_ASGS = sum(ha_ASGS, na.rm = TRUE))%>%
   ungroup()%>%
-  pivot_wider(values_fill = -999, names_from = crop , values_from = ha_ASGS, id_cols = c(SA2_MAIN11, adm_level)) %>% 
+  pivot_wider(values_fill = -999, names_from = crop , values_from = ha_ASGS, id_cols = c(SA2_MAIN11, adm_level)) %>%
   rename(adm_code = SA2_MAIN11)
 
 stats_dfadm1 <- stats_df %>%
@@ -68,7 +77,7 @@ stats_dfadm1 <- stats_df %>%
            adm_level = 1,  crop) %>%
   summarize(ha_ASGS = sum(ha_ASGS, na.rm = TRUE))%>%
   ungroup()%>%
-  pivot_wider(values_fill = -999, names_from = crop , values_from = ha_ASGS, id_cols = c(adm_level, STE_CODE11)) %>% 
+  pivot_wider(values_fill = -999, names_from = crop , values_from = ha_ASGS, id_cols = c(adm_level, STE_CODE11)) %>%
   rename(adm_code = STE_CODE11)
 
 stats_dfadm0 <- stats_df %>%
@@ -88,24 +97,24 @@ final_ha_stat <- adm_list_wide %>%
 
 ### Cropping intensity
 
-crop <- read.csv("C:/Temp/mapspamc_aus/mappings/crop.csv")
+crop <- read.csv(file.path(param$model_path, "mappings/crop.csv"))
 
-ci_template <- adm_list_wide %>% dplyr::filter(adm_level %in% 
+ci_template <- adm_list_wide %>% dplyr::filter(adm_level %in%
                                                  c(0:1))
-ci_template <- tidyr::expand_grid(ci_template, system = c("S", 
-                                                          "L", "H", "I")) %>% dplyr::select(adm_name, adm_code, 
+ci_template <- tidyr::expand_grid(ci_template, system = c("S",
+                                                          "L", "H", "I")) %>% dplyr::select(adm_name, adm_code,
                                                                                             adm_level, system, everything())
 ci_template[, crop$crop] <- 1
 
 ### Production share
 
-prodshare <- read.csv("C:/Temp/mapspamc_db/subnational_statistics/prod_share2.csv")
+prodshare <- read.csv(file.path(param$db_path, glue("subnational_statistics/{param$iso3c}/prod_share2.csv")))
 
-ps_template <- adm_list_wide %>% 
+ps_template <- adm_list_wide %>%
   dplyr::filter(adm_level %in%  c(0:1))
 
-ps_template <- tidyr::expand_grid(ps_template, system = c("S", 
-                                                          "L", "H", "I")) %>% dplyr::select(adm_name, adm_code, 
+ps_template <- tidyr::expand_grid(ps_template, system = c("S",
+                                                          "L", "H", "I")) %>% dplyr::select(adm_name, adm_code,
                                                                                             adm_level, system, everything())
 
 ps_stat <- ps_template %>%
