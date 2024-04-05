@@ -29,8 +29,11 @@ iso3c_shp <- "SA2_2011_AUST.shp"
 
 #' I think things go wrong here. I recommend the following:
 #' 1. Aggregate aus_stats to mapspamc crops and adm2 (=SA2_ID)
-#' 2. Rename SA2_ID to adm2_code and make sure it is consistent with adm_list!!!!
+#' 2. Rename SA2_ID to adm2_code and make sure it is consistent with adm_list!!!! Check and check again as this is crucial!!
 #' 3. Add code that calculates adm0, adm1 and adm2 aggregates by crop and bind them by adding adm_level = 0, 1, etc
+#' 4. Check for internal consistency of the data (adm1 = sum of adm2 for each crop if all data is available or adm1 > adm2).
+#' if there are NAs at adm2 level. There are some checks and code to rebalance but this only works perfectly if there are no NA values.
+#' 4. Put in wide format and add -999 for missing values.
 
 
 # load shapefile
