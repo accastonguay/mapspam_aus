@@ -107,7 +107,7 @@ ci_template <- adm_list_wide %>% dplyr::filter(adm_level %in%
 ci_template <- tidyr::expand_grid(ci_template, system = c("S",
                                                           "L", "H", "I")) %>% dplyr::select(adm_name, adm_code,
                                                                                             adm_level, system, everything())
-ci_template[, crop$crop] <- 1
+ci_template[, crop$crop] <- 2
 
 ### Production share
 
