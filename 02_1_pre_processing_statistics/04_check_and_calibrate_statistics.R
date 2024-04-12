@@ -8,7 +8,6 @@
 # SOURCE PARAMETERS ----------------------------------------------------------------------
 source(here::here("01_model_setup/01_model_setup.r"))
 
-
 # LOAD DATA ------------------------------------------------------------------------------
 ha_df_raw <- read_csv(file.path(param$db_path,
   glue("subnational_statistics/{param$iso3c}/subnational_harvested_area_{param$year}_{param$iso3c}.csv")))
@@ -22,7 +21,7 @@ ci_df_raw <- read_csv(file.path(param$db_path,
   glue("subnational_statistics/{param$iso3c}/cropping_intensity_{param$year}_{param$iso3c}.csv")))
 
 # adm_list
-load_data("adm_list", param)
+mapspamc::load_data("adm_list", param)
 
 # faostat
 fao_raw <- read_csv(file.path(param$model_path,
@@ -55,15 +54,17 @@ ha_df <- ha_df %>%
 
 # Round values
 ha_df <- ha_df %>%
-  mutate(ha = round(ha, 0))
+  mutate(ha = round(ha, 0)) %>%
+  mutate(ha = replace_na(ha, 0)) ### TO BE REMOVED
 
 # Check if the statistics add up and show where this is not the case
-check <- check_statistics(ha_df, param, out = TRUE)
+check <- mapspamc::check_statistics(ha_df, param, out = TRUE)
 check
 
 # Make sure the totals at higher levels are the same as subtotals
 # We start at the lowest level, assuming lower levels are preferred if more than one level
 # of data is available and data is complete.
+
 ha_df <- reaggregate_statistics(ha_df, param)
 
 # Check again
@@ -104,6 +105,23 @@ crop_rem <- setdiff(unique(ha_df$crop), unique(fao$crop))
 ha_df <- ha_df %>%
   filter(!crop %in% crop_rem)
 
+#
+# sum_ADM0 <- ha_df %>%
+#   filter(adm_level == 0)%>%
+#   pivot_wider(names_from = crop, values_from = ha, id_cols = adm_code ) %>%
+#   select(-c(adm_code))%>%
+#   colSums(na.rm = TRUE)
+#
+# sum_ADM1 <- ha_df %>%
+#   filter(adm_level == 1) %>%
+#   pivot_wider(names_from = crop, values_from = ha, id_cols = adm_code ) %>%
+#   select(-c(adm_code))%>%
+#   colSums(na.rm = TRUE)
+#
+#
+# sum_ADM0 == sum_ADM1
+# sum_ADM0 - sum_ADM1
+
 # Identify crops that are present in fao but not in ha_df.
 # We will add them to ha_df.
 
@@ -121,6 +139,9 @@ ha_df <- ha_df %>%
         adm_code = unique(ha_df$adm_code[ha_df$adm_level==0]),
         adm_level = 0,
         adm_name = unique(ha_df$adm_name[ha_df$adm_level==0])))
+
+
+
 
 # Calculate scaling factor
 fao_stat_sf <-bind_rows(
@@ -161,7 +182,7 @@ check_statistics(ha_df, param, out = TRUE)
 # To wide format
 ha_df <- ha_df %>%
   mutate(ha = replace_na(ha, -999)) %>%
-  pivot_wider(names_from = crop, values_from = ha) %>%
+  pivot_wider(names_from = crop, values_from = ha, values_fill = -999) %>%
   arrange(adm_code, adm_code, adm_level)
 
 
@@ -173,10 +194,10 @@ ps_df <- ps_df_raw
 # ci does not need to be adjusted
 ci_df <- ci_df_raw
 
-
 # SAVE -------------------------------------------------------------------------------------
 # Save the ha, fs and ci csv files in the Processed_data/agricultural_statistics folder
 # Note that they have to be saved in this folder using the names below so do not change this!
+
 write_csv(ha_df, file.path(param$model_path, glue("processed_data/agricultural_statistics/ha_adm_{param$year}_{param$iso3c}.csv")))
 write_csv(ps_df, file.path(param$model_path, glue("processed_data/agricultural_statistics/ps_adm_{param$year}_{param$iso3c}.csv")))
 write_csv(ci_df, file.path(param$model_path, glue("processed_data/agricultural_statistics/ci_adm_{param$year}_{param$iso3c}.csv")))

@@ -142,7 +142,6 @@ create_grid(param)
 # RASTERIZE ADM_MAP ----------------------------------------------------------------------
 rasterize_adm_map(param)
 
-
 #
 # readRDS(file.path(
 #   temp_path,

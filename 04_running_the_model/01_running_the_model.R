@@ -6,7 +6,7 @@
 #'========================================================================================
 
 # SOURCE PARAMETERS ----------------------------------------------------------------------
-source(here::here("C:/Temp/mapspamc_aus","01_model_setup/01_model_setup.r"))
+source(here::here("01_model_setup/01_model_setup.r"))
 
 # param <- mapspamc_par(
 #   model_path = model_path,
@@ -22,6 +22,8 @@ source(here::here("C:/Temp/mapspamc_aus","01_model_setup/01_model_setup.r"))
 # Select solver for each model and use tictoc to show processing time.
 tic()
 if(param$model == "min_entropy"){
+# if(param$model == "max_score"){
+  
   run_mapspamc(param, solver = "IPOPT")
 } else {
   run_mapspamc(param, solver = "CPLEX")
@@ -36,3 +38,4 @@ combine_results(param)
 # INSPECT RESULTS ------------------------------------------------------------------------
 view_results("rice", var = "ha", param)
 view_results("maiz", var = "ha", param)
+view_results("whea", var = "ha", param)

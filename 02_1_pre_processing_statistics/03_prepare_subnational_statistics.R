@@ -39,15 +39,19 @@ iso3c_shp <- "SA2_2011_AUST.shp"
 # load shapefile
 adm_map_raw <- sf::read_sf(file.path(param$db_path, glue("adm/{param$iso3c}/{iso3c_shp}"))) |>
   st_drop_geometry()
-abs2crop <- read.csv(file.path(param$db_path, glue("subnational_statistics/{param$iso3c}/ABS2crop.csv")))
+abs2crop <- read.csv(file.path(param$model_path, glue("mappings/ABS2crop.csv")))
 
+#' 1. Aggregate aus_stats to mapspamc crops and adm2 (=SA2_ID)
 stats_df <- abs2crop %>%
   left_join(aus_stats, by = "Commodity") %>%
   filter(!is.na(crop))%>%
     # distinct(crop ) %>%
   mutate(SA2_MAIN11 = as.character(SA2_ID)) %>%
   left_join(adm_map_raw, by = "SA2_MAIN11") %>%
-  select(SA2_MAIN11, Commodity, crop , ha_ASGS , STE_NAME11, STE_CODE11)
+  select(SA2_MAIN11, Commodity, crop , ha_ASGS , STE_NAME11, STE_CODE11) %>%
+  group_by(SA2_MAIN11, crop, STE_NAME11, STE_CODE11) %>%
+  summarise(ha_ASGS = round(sum(ha_ASGS, na.rm = TRUE)))
+
 
 
 
@@ -59,14 +63,10 @@ adm_list_wide <- dplyr::bind_rows(adm_list %>% dplyr::select_at(vars(contains("a
                                     setNames(c("adm_name", "adm_code")) %>% dplyr::mutate(adm_level = 2) %>%
                                     unique())
 
-# ha_template <- adm_list_wide %>% dplyr::filter(adm_level %in%
-#                                                  c(0:param$adm_level))
-# ha_template[, crop$crop] <- NA
 
 stats_dfadm2 <- stats_df %>%
   select(SA2_MAIN11, crop, ha_ASGS) %>%
   mutate(adm_level = 2) %>%
-
   group_by(SA2_MAIN11,adm_level, crop) %>%
   summarize(ha_ASGS = sum(ha_ASGS, na.rm = TRUE))%>%
   ungroup()%>%
@@ -92,11 +92,58 @@ stats_dfadm0 <- stats_df %>%
   ungroup()%>%
   pivot_wider(values_fill = -999, names_from = crop , values_from = ha_ASGS, id_cols = c(adm_code ,adm_level))
 
-all_ha <- bind_rows(stats_dfadm2, stats_dfadm1, stats_dfadm0) %>%
-  mutate(adm_code = paste0('AU', adm_code))
+
+
+all_ha <- bind_rows(stats_dfadm2, stats_dfadm1, stats_dfadm0) %>% #' 3. Add code that calculates adm0, adm1 and adm2 aggregates by crop and bind them by adding adm_level = 0, 1, etc
+  mutate(adm_code = paste0('AU', adm_code)) #' 2. Rename SA2_ID to adm2_code and make sure it is consistent with adm_list!!!! Check and check again as this is crucial!!
+
 
 final_ha_stat <- adm_list_wide %>%
-  left_join(all_ha, by = c("adm_code", "adm_level"))
+  left_join(all_ha, by = c("adm_code", "adm_level")) %>%
+ mutate_if(is.numeric, ~replace_na(., -999))
+
+
+#' 4. Check for internal consistency of the data (adm1 = sum of adm2 for each crop if all data is available or adm1 > adm2).
+### Check that sum AU1 == AU0
+
+load_data("faostat2crop", param)
+
+
+sum_ADM0 <- final_ha_stat %>%
+  filter(adm_level == 0)%>%
+  select(faostat2crop$crop)%>%
+  colSums(na.rm = TRUE)
+
+sum_ADM1 <- final_ha_stat %>%
+  filter(adm_level == 1) %>%
+  select(faostat2crop$crop) %>%
+  mutate_all(~na_if(., -999)) %>%
+  colSums(na.rm = TRUE)
+
+identical(sum_ADM0, sum_ADM1)
+
+### Check that sum AU2 == AU1 for each AU1 code
+
+for (admcode in 1:9){
+
+sum_ADM1 <- final_ha_stat %>%
+  filter(adm_level == 1,
+         adm_code == paste0('AU', admcode)) %>%
+  select(faostat2crop$crop) %>%
+  mutate_all(~na_if(., -999)) %>%
+  colSums(na.rm = TRUE)
+
+sum_ADM2 <- final_ha_stat %>%
+  filter(adm_level == 2,
+         str_detect(adm_code, paste0('AU', admcode)))%>%
+  select(faostat2crop$crop) %>%
+  mutate_all(~na_if(., -999)) %>%
+  colSums(na.rm = TRUE)
+
+print(paste(admcode))
+print(identical(sum_ADM1, sum_ADM2))
+}
+
 
 ### Cropping intensity
 

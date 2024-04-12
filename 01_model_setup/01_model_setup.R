@@ -38,7 +38,7 @@ db_path <- "c:/temp"
 
 # Sets the location of the version of GAMS that will be used to solve the model
 #gams_path <- "C:/GAMS/41"
-gams_path <- "C:/MyPrograms/GAMS/40"
+gams_path <- "C:/GAMS/41"
 
 # Set mapspamc parameters for the min_entropy_5min_adm_level_2_solve_level_0 model
 param <- mapspamc_par(

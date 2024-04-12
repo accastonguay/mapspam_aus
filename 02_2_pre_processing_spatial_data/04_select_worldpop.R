@@ -20,7 +20,7 @@ load_data(c("adm_map", "grid"), param)
 # Note that WorldPop presents annual maps. Please select the map that is closest to your
 # target year.
 
-input <- file.path(param$db_path, glue("worldpop/ppp_{param$year}_1km_Aggregated.tif"))
+input <- file.path(param$db_path, glue("worldpop/ppp_2010_1km_Aggregated.tif"))
 
 if(param$res == "30sec") {
   temp_path <- file.path(param$model_path, glue("processed_data/maps/population/{param$res}"))

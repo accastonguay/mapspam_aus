@@ -8,7 +8,6 @@
 # SOURCE PARAMETERS ----------------------------------------------------------------------
 source(here::here("01_model_setup/01_model_setup.r"))
 
-
 # PREPARE PHYSICAL AREA ------------------------------------------------------------------
 prepare_physical_area(param)
 

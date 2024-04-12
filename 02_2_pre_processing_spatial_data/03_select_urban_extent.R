@@ -18,7 +18,9 @@ load_data(c("adm_map"), param)
 # target year.
 
 # Create country polygon with clumps of urban areas
-input <- file.path(param$db_path, glue("ghs_smod/ghs_smod_{param$year}.tif"))
+# input <- file.path(param$db_path, glue("ghs_smod/ghs_smod_{param$year}.tif"))
+input <- file.path(param$db_path, glue("ghs_smod/ghs_smod_2010.tif"))
+
 output <- crop(rast(input), vect(adm_map$geometry), mask = TRUE)
 output <- patches(output, directions = 8, zeroAsNA = TRUE)
 output <- st_as_sf(as.polygons(output))

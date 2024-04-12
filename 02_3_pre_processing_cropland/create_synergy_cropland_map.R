@@ -24,8 +24,8 @@ copernicus <- rast(file.path(param$model_path,
 
 # Rank table
 st_raw <- read_excel(file.path(param$db_path,
-                               glue("synergy_cropland_table/synergy_cropland_table_{param$year}.xlsx")),
-                               #glue("synergy_cropland_table/synergy_cropland_table_2015.xlsx")),
+                               # glue("synergy_cropland_table/synergy_cropland_table_{param$year}.xlsx")),
+                               glue("synergy_cropland_table/synergy_cropland_table_2015.xlsx")),
 
                      sheet = "table")%>%
   rename(esri = modis) ############ NEED to rename modis to esri ###############
@@ -132,4 +132,3 @@ writeRaster(cl_rank, file.path(param$model_path,
 # CLEAN UP -------------------------------------------------------------------------------
 rm(adm_map, cl, cl_area, cl_code, cl_df, cl_max, cl_rank, cl_syn_df,
    copernicus, esacci, esri, glad, grid, r_area, st, st_raw)
-
