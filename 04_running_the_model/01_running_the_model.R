@@ -20,10 +20,12 @@ source(here::here("01_model_setup/01_model_setup.r"))
 #   model = "min_entropy")
 # RUN MODEL -----------------------------------------------------------------------------
 # Select solver for each model and use tictoc to show processing time.
+# 162168 sec!! = 45 hours!
+
 tic()
 if(param$model == "min_entropy"){
 # if(param$model == "max_score"){
-  
+
   run_mapspamc(param, solver = "IPOPT")
 } else {
   run_mapspamc(param, solver = "CPLEX")
