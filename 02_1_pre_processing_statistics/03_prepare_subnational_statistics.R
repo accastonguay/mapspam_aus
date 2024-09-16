@@ -20,12 +20,13 @@ source(here::here("01_model_setup/01_model_setup.r"))
 
 
 # LOAD DATA ------------------------------------------------------------------------------
-aus_stats <- read.csv(file.path(param$db_path, "subnational_statistics/AUS/T_yield_2000_ASGS_SA211.csv")) %>%
-  filter(!SPREAD_Commodity %in% c('Eggs' , "Beef Cattle", "Dairy Cattle", "Sheep", "Hay"))
+aus_stats <- read.csv(file.path(param$db_path, "subnational_statistics/AUS/area_data.csv")) %>%
+  filter(!SPREAD_Commodity %in% c('Eggs' , "Beef Cattle", "Dairy Cattle", "Sheep", "Hay"),
+         STE_CODE11 < 8
+         )
 adm_list <- read.csv(file.path(param$model_path, "processed_data/lists/adm_list_2000_AUS.csv"))
 
-iso3c_shp <- "SA2_2011_AUST.shp"
-
+iso3c_shp <- "AUS_boundaries.shp"
 
 #' I think things go wrong here. I recommend the following:
 #' 1. Aggregate aus_stats to mapspamc crops and adm2 (=SA2_ID)
@@ -46,11 +47,16 @@ stats_df <- abs2crop %>%
   left_join(aus_stats, by = "Commodity") %>%
   filter(!is.na(crop))%>%
     # distinct(crop ) %>%
-  mutate(SA2_MAIN11 = as.character(SA2_ID)) %>%
-  left_join(adm_map_raw, by = "SA2_MAIN11") %>%
+  # mutate(SA2_MAIN11 = as.character(SA2_ID)) %>%
+  mutate(STE_CODE11 = as.character(STE_CODE11)) %>%
+
+  left_join(adm_map_raw, by = c("STE_NAME11", "SA2_MAIN11", "STE_CODE11")) %>%
   select(SA2_MAIN11, Commodity, crop , ha_ASGS , STE_NAME11, STE_CODE11) %>%
   group_by(SA2_MAIN11, crop, STE_NAME11, STE_CODE11) %>%
   summarise(ha_ASGS = round(sum(ha_ASGS, na.rm = TRUE)))
+
+# %>%
+#   filter(!is.na(STE_CODE11) )
 
 
 
@@ -71,7 +77,8 @@ stats_dfadm2 <- stats_df %>%
   summarize(ha_ASGS = sum(ha_ASGS, na.rm = TRUE))%>%
   ungroup()%>%
   pivot_wider(values_fill = -999, names_from = crop , values_from = ha_ASGS, id_cols = c(SA2_MAIN11, adm_level)) %>%
-  rename(adm_code = SA2_MAIN11)
+  rename(adm_code = SA2_MAIN11)%>%
+  mutate(adm_code = as.numeric(adm_code))
 
 stats_dfadm1 <- stats_df %>%
   select(STE_CODE11, crop, ha_ASGS) %>%
@@ -81,7 +88,8 @@ stats_dfadm1 <- stats_df %>%
   summarize(ha_ASGS = sum(ha_ASGS, na.rm = TRUE))%>%
   ungroup()%>%
   pivot_wider(values_fill = -999, names_from = crop , values_from = ha_ASGS, id_cols = c(adm_level, STE_CODE11)) %>%
-  rename(adm_code = STE_CODE11)
+  rename(adm_code = STE_CODE11)%>%
+  mutate(adm_code = as.numeric(adm_code))
 
 stats_dfadm0 <- stats_df %>%
   select(STE_CODE11, crop, ha_ASGS) %>%
@@ -90,7 +98,8 @@ stats_dfadm0 <- stats_df %>%
   group_by(adm_code , adm_level, crop) %>%
   summarize(ha_ASGS = sum(ha_ASGS, na.rm = TRUE))%>%
   ungroup()%>%
-  pivot_wider(values_fill = -999, names_from = crop , values_from = ha_ASGS, id_cols = c(adm_code ,adm_level))
+  pivot_wider(values_fill = -999, names_from = crop , values_from = ha_ASGS, id_cols = c(adm_code ,adm_level)) %>%
+  mutate(adm_code = as.numeric(adm_code))
 
 
 
@@ -124,7 +133,7 @@ identical(sum_ADM0, sum_ADM1)
 
 ### Check that sum AU2 == AU1 for each AU1 code
 
-for (admcode in 1:9){
+for (admcode in 1:7){
 
 sum_ADM1 <- final_ha_stat %>%
   filter(adm_level == 1,
@@ -156,6 +165,8 @@ ci_template <- tidyr::expand_grid(ci_template, system = c("S",
                                                                                             adm_level, system, everything())
 ci_template[, crop$crop] <- 2
 
+# ci_template[ci_template$adm_name == "Australian Capital Territory", crop$crop] <- 1
+
 ### Production share
 
 prodshare <- read.csv(file.path(param$db_path, glue("subnational_statistics/{param$iso3c}/prod_share2.csv")))
@@ -177,7 +188,7 @@ ps_stat <- ps_template %>%
 # ps_stat <- create_statistics_template("ps", param)
 # ci_stat <- create_statistics_template("ci", param)
 
-
+############# Remove ACT from all files ######################
 # SAVE -----------------------------------------------------------------------------------
 write_csv(final_ha_stat, file.path(param$db_path,
   glue("subnational_statistics/{param$iso3c}/subnational_harvested_area_{param$year}_{param$iso3c}.csv")))
@@ -188,7 +199,7 @@ write_csv(ps_stat, file.path(param$db_path,
 
 
 # CLEAN UP -------------------------------------------------------------------------------
-rm(final_ha_stat, ps_stat, ci_stat)
+rm(final_ha_stat, ps_stat, ci_template)
 
 
 # NOTE -----------------------------------------------------------------------------------

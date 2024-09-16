@@ -23,7 +23,6 @@ p_load(mapspamc, countrycode, here, glue, terra, readxl, RColorBrewer, tidyverse
 options(scipen=999) # Suppress scientific notation
 options(digits=4) # limit display to four digits
 
-
 # SETUP MAPSPAMC -------------------------------------------------------------------------
 # Set the folders where the scripts, model and database will be stored.
 # Note that R uses forward slashes even in Windows!!
@@ -37,7 +36,7 @@ model_path <- "c:/temp/mapspamc_aus"
 db_path <- "c:/temp"
 
 # Sets the location of the version of GAMS that will be used to solve the model
-gams_path <- "C:/MyPrograms/GAMS/40"
+gams_path <- "C:/GAMS/41"
 #gams_path <- "C:/GAMS/41"
 
 # Set mapspamc parameters for the min_entropy_5min_adm_level_2_solve_level_0 model
@@ -49,13 +48,11 @@ param <- mapspamc_par(
   year = 2000,
   res = "5min",
   adm_level = 2,
-  solve_level = 0,
+  solve_level = 1,
   model = "min_entropy")
-
 
 # Show parameters
 print(param)
 
 # Create folder structure in the mapspamc_path
 create_folders(param)
-

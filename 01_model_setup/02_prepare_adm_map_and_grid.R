@@ -9,13 +9,13 @@
 # SOURCE PARAMETERS ----------------------------------------------------------------------
 source(here::here("01_model_setup/01_model_setup.r"))
 
-
 # LOAD DATA ------------------------------------------------------------------------------
 # replace the name of the shapefile with that of your own country.
-iso3c_shp <- "SA2_2011_AUST.shp"
+iso3c_shp <- "AUS_boundaries.shp"
 
 # load shapefile
-adm_map_raw <- read_sf(file.path(param$db_path, glue("adm/{param$iso3c}/{iso3c_shp}")))
+adm_map_raw <- read_sf(file.path(param$db_path, glue("adm/{param$iso3c}/{iso3c_shp}"))) %>%
+  filter(STE_CODE11 < 8)
 
 # plot
 # plot(adm_map_raw$geometry)
